@@ -11,11 +11,12 @@
     <header>
         <nav>
             <h2>
-               PORTFOLIO
+            PORTFOLIO
             </h2>
             
             
             <ul>
+                <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -24,7 +25,7 @@
     </header>
     <hr>
     <main>
-        <section id="about" class="hero">
+        <section id="hero" class="hero">
             <div class="hero-text">
                 <h2 class="hero-title">Welcome to my portfolio, I'm</h2>
                 <h1 class="hero-name">Rajasiddharth.M</h1>
@@ -35,6 +36,65 @@
             </div>
             <div class="hero-photo">
                 <img src="image.png.jpg" alt="My photo">
+            </div>
+        </section>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="about-left">
+                <img src="https://images.unsplash.com/photo-1481887328591-3e277f9473dc?fm=jpg" alt="Work Desk">
+            </div>
+            <div class="about-right">
+                <h1 class="about-title">About Me</h1>
+                <p class="about-text">
+                    As an enthusiastic full stack web developer, I thrive on crafting dynamic and engaging web 
+                    applications that captivate users. My expertise spans a wide range of technologies including 
+                    <b>JavaScript, React, Redux, Node.js, Express, MongoDB, PostgreSQL, HTML, CSS,</b> and <b>Git</b>. 
+                    My insatiable thirst for learning drives me to constantly seek out new challenges and expand my 
+                    skill set. I am a collaborative team player who is eager to collaborate with others in the 
+                    pursuit of creating outstanding applications.
+                </p>
+                <div class="about-tabs">
+                    <a href="#skills">Skills</a>
+                    <a href="#education">Education</a>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#internship">Internship</a>
+                </div>
+                
+                <!-- Add Tab Contents -->
+                <div class="tab-contents">
+                    <div id="skills" class="tab-content">
+                        <h3>Technical Skills</h3>
+                        <ul class="skills-list">
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>React.js, Node.js</li>
+                            <li>Python, Django</li>
+                            <li>Git, GitHub</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="education" class="tab-content">
+                        <h3>Education</h3>
+                        <p>B.Tech in Computer Science</p>
+                        <p>Your University Name</p>
+                        <p>2020 - 2024</p>
+                    </div>
+                    
+                    <div id="certifications" class="tab-content">
+                        <h3>Certifications</h3>
+                        <ul>
+                            <li>Web Development Bootcamp</li>
+                            <li>Python Programming</li>
+                            <li>React.js Certification</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="internship" class="tab-content">
+                        <h3>Internship Experience</h3>
+                        <p>Web Developer Intern</p>
+                        <p>Company Name</p>
+                        <p>Duration: 3 months</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
