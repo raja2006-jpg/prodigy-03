@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajasiddharth_M</title>
+    <title>Rajasiddharth.M - Portfolio</title>
     <link rel="icon" type="image/png" href="https://www.bing.com/th/id/OIP.w1CxvvCHjU2fZ4aOTw0uwQHaEw?w=267&h=211&c=8&rs=1&qlt=90&o=6&cb=thwsc4&dpr=1.3&pid=3.1&rm=2">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <h2>
-            PORTFOLIO
+            <h2 class="nav-brand">
+                <a href="#hero">PORTFOLIO</a>
             </h2>
-            
-            
             <ul>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -23,10 +25,10 @@
             </ul>
         </nav>
     </header>
-    <hr>
+
     <main>
         <section id="hero" class="hero">
-            <div class="hero-text">
+            <div class="hero-text" data-aos="slide-right">
                 <h2 class="hero-title">Welcome to my portfolio, I'm</h2>
                 <h1 class="hero-name">Rajasiddharth.M</h1>
                 <p class="hero-desc">
@@ -34,19 +36,21 @@
                 </p>
                 <a href="#contact" class="btn">Let's connect!</a>
             </div>
-            <div class="hero-photo">
-                <img src="image.png.jpg" alt="My photo">
+            <div class="hero-photo" data-aos="zoom-in">
+                <img src="image.png.jpg" alt="A professional headshot of Rajasiddharth.M, a web developer.">
             </div>
         </section>
-        <!-- About Section -->
-        <section id="about" class="about">
-            <div class="about-left">
-                <img src="https://images.unsplash.com/photo-1481887328591-3e277f9473dc?fm=jpg" alt="Work Desk">
+        
+        <div class="section-divider"></div>
+
+        <section id="about" class="about" data-aos="fade-up">
+            <div class="about-left" data-aos="fade-up">
+                <img src="https://images.unsplash.com/photo-1481887328591-3e277f9473dc?fm=jpg" alt="A professional work desk with a laptop and a coffee mug.">
             </div>
-            <div class="about-right">
+            <div class="about-right" data-aos="fade-up">
                 <h1 class="about-title">About Me</h1>
                 <p class="about-text">
-                    As an enthusiastic full stack web developer, I thrive on crafting dynamic and engaging web 
+                    As an enthusiastic full-stack web developer, I thrive on crafting dynamic and engaging web 
                     applications that captivate users. My expertise spans a wide range of technologies including 
                     <b>JavaScript, React, Redux, Node.js, Express, MongoDB, PostgreSQL, HTML, CSS,</b> and <b>Git</b>. 
                     My insatiable thirst for learning drives me to constantly seek out new challenges and expand my 
@@ -54,15 +58,14 @@
                     pursuit of creating outstanding applications.
                 </p>
                 <div class="about-tabs">
-                    <a href="#skills">Skills</a>
-                    <a href="#education">Education</a>
-                    <a href="#certifications">Certifications</a>
-                    <a href="#internship">Internship</a>
+                    <button class="tab-link active-tab" data-tab-target="#skills">Skills</button>
+                    <button class="tab-link" data-tab-target="#education">Education</button>
+                    <button class="tab-link" data-tab-target="#certifications">Certifications</button>
+                    <button class="tab-link" data-tab-target="#internship">Internship</button>
                 </div>
                 
-                <!-- Add Tab Contents -->
                 <div class="tab-contents">
-                    <div id="skills" class="tab-content">
+                    <div id="skills" class="tab-content active-content">
                         <h3>Technical Skills</h3>
                         <ul class="skills-list">
                             <li>HTML, CSS, JavaScript</li>
@@ -99,5 +102,10 @@
         </section>
     </main>
     
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
