@@ -6,12 +6,11 @@
     <title>Rajasiddharth.M - Portfolio</title>
     <link rel="icon" type="image/png" href="https://www.bing.com/th/id/OIP.w1CxvvCHjU2fZ4aOTw0uwQHaEw?w=267&h=211&c=8&rs=1&qlt=90&o=6&cb=thwsc4&dpr=1.3&pid=3.1&rm=2">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Navbar -->
     <header>
         <nav>
             <h2 class="nav-brand">
@@ -23,14 +22,17 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            
         </nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section id="hero" class="hero">
             <div class="hero-text" data-aos="slide-right">
                 <h2 class="hero-title">Welcome to my portfolio, I'm</h2>
-                <h1 class="hero-name">Rajasiddharth.M</h1>
+                <!-- Animated Name -->
+                <h1 class="hero-name"><span id="typed-name"></span></h1>
                 <p class="hero-desc">
                     I'm a web developer and Python developer passionate about crafting exceptional digital experiences. Explore my portfolio and let's create something extraordinary together!
                 </p>
@@ -43,9 +45,11 @@
         
         <div class="section-divider"></div>
 
+        <!-- About Section -->
         <section id="about" class="about" data-aos="fade-up">
             <div class="about-left" data-aos="fade-up">
-                <img src="https://images.unsplash.com/photo-1481887328591-3e277f9473dc?fm=jpg" alt="A professional work desk with a laptop and a coffee mug.">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.YjoOcIYpz6D0vJsW2RFcQgHaDh?r=0&cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Professional work desk">
+                <script src="script.js"></script>
             </div>
             <div class="about-right" data-aos="fade-up">
                 <h1 class="about-title">About Me</h1>
@@ -63,7 +67,6 @@
                     <button class="tab-link" data-tab-target="#certifications">Certifications</button>
                     <button class="tab-link" data-tab-target="#internship">Internship</button>
                 </div>
-                
                 <div class="tab-contents">
                     <div id="skills" class="tab-content active-content">
                         <h3>Technical Skills</h3>
@@ -74,14 +77,11 @@
                             <li>Git, GitHub</li>
                         </ul>
                     </div>
-                    
                     <div id="education" class="tab-content">
                         <h3>Education</h3>
-                        <p>B.Tech in Computer Science</p>
-                        <p>Your University Name</p>
-                        <p>2020 - 2024</p>
+                        <p>Pursuing Bachelors in Computer Science and Engineering at RVS Technical Campus.</p>
+                        <div><p>Completed Schoolings in Dhanalakshmi Srinivasan Matriculation Hr. Sec. School</p></div>
                     </div>
-                    
                     <div id="certifications" class="tab-content">
                         <h3>Certifications</h3>
                         <ul>
@@ -90,7 +90,6 @@
                             <li>React.js Certification</li>
                         </ul>
                     </div>
-                    
                     <div id="internship" class="tab-content">
                         <h3>Internship Experience</h3>
                         <p>Web Developer Intern</p>
@@ -98,14 +97,146 @@
                         <p>Duration: 3 months</p>
                     </div>
                 </div>
+                <a href="#projects" class="btn" style="margin-top:2rem;">View My Projects</a>
             </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section" data-aos="fade-up">
+            <h2 class="projects-title">My Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Website</button>
+                <button class="filter-btn">Mobile</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://blog.magezon.com/wp-content/uploads/2023/04/red-website-1-scaled.jpg" alt="Smart Waste Reporter">
+                    <h3>Simple smart waste reporter</h3>
+                    <p>
+                        The Smart Waste Reporter Web Application is a smart city solution that enables citizens to easily report waste issues in their area. With features like user login, photo upload, location input, and complaint tracking, it helps authorities quickly identify and resolve waste management problems. This project showcases how technology can improve urban cleanliness, community.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <img src="https://thvnext.bing.com/th/id/OIP.hGgE_wJpM9BjFXqdJormKQAAAA?w=160&h=180&c=7&r=0&o=5&cb=ucfimg2&dpr=1.3&pid=1.7&ucfimg=1" alt="AI Chatbot Website">
+                    <h3>Mini AI chabot Website</h3>
+                    <p>
+                        A simple yet powerful platform designed to provide instant and interactive responses. Built with modern web technologies and AI integration, this chatbot can understand your queries, give smart replies, and simulate real-time conversations. The goal is to showcase how AI can improve user experience and customer support.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <img src="https://thvnext.bing.com/th/id/OIP.MY1hTfVK4eRhcwrElYP5VwAAAA?w=272&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1" alt="Cloud Storage Website">
+                    <h3>Mini Cloud Storage Website</h3>
+                    <p>
+                        My Cloud Storage Website is a secure and simple platform that allows users to upload, manage, and access files anytime. With a login system, each user gets a private space to store and organize data safely. This project demonstrates cloud storage with authentication.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            
+            <div class="contact-container">
+
+              <!-- Left Side -->
+              <div class="contact-left">
+                <h2 class="contact-title">Let's Connect</h2>
+                <p>
+                  I'm on the lookout for fresh prospects, my inbox is always wide open.  
+                  If you have a query or just fancy a chat, I'll do my utmost to respond!
+                </p>
+
+                <!-- Social Icons -->
+                <div class="contact-socials">
+                  <a href="https://github.com/yourgithub" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+                <!-- Branding with glow -->
+                <div class="contact-brand">
+                  <h3>RAJASIDDHARTH</h3>
+                  <p>UI & UX Designer & Web Developer</p>
+                </div>
+              </div>
+
+              <!-- Right Side -->
+              <div class="contact-right">
+                <p class="warning">
+                  ⚠️ Please use the below contact details only for genuine communication.  
+                  I respect privacy and ethical guidelines.
+                </p>
+                
+                <div class="contact-details">
+                  <p><span>Name:</span> Rajasiddharth</p>
+                  <p><span>Email:</span> rajasiddharthrajasiddharth@gmail.com</p>
+                  <p><span>Contact:</span> +91 7397725568</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="contact-footer">
+              <p>© 2025 RAJASIDDHARTH. All rights reserved.</p>
+              <a href="#contact">Contact me for any doubts</a>
+            </footer>
         </section>
     </main>
     
-    <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        // AOS Animation
         AOS.init();
+
+        // Tab switching About section
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabLinks = document.querySelectorAll('.tab-link');
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    const targetId = event.target.getAttribute('data-tab-target');
+                    tabLinks.forEach(l => l.classList.remove('active-tab'));
+                    tabContents.forEach(c => c.classList.remove('active-content'));
+                    event.target.classList.add('active-tab');
+                    document.querySelector(targetId).classList.add('active-content');
+                });
+            });
+
+            // Projects filter button (appearance only)
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
     </script>
+
+ <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Typed("#typed-name", {
+      strings: ["Rajasiddharth.M", "UI/UX Designer", "Web Developer"], 
+      typeSpeed: 45,     // typing speed
+      backSpeed: 30,     // backspacing speed
+      backDelay: 1400,   // pause before backspacing
+      startDelay: 200,   // delay before typing starts
+      loop: true,        // keeps repeating
+      showCursor: true,  // shows blinking cursor
+      cursorChar: "|"    // cursor style
+    });
+  });
+</script>
+
+
+
+    <script src="script.js"></script>
+    <button id="backToTop">↑</button>
 </body>
 </html>
